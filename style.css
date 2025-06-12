@@ -1,0 +1,160 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b0b6bb; /* Azul bebê muito claro */
+    color: #161515;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ee84dc; /* Azul aço */
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.8em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #DDD;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8em;
+    color: #9d30b3; /* Laranja escuro */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6em;
+    color: #6A5ACD; /* Azul ardósia */
+    margin-top: 30px;
+}
+
+.introducao {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.introducao .texto-introducao {
+    flex: 1;
+    min-width: 320px;
+}
+
+.introducao .imagem-introducao {
+    flex: 1;
+    text-align: center;
+    min-width: 320px;
+}
+
+.introducao img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    border: 4px solid #bf17e0; /* Dourado */
+}
+
+.introducao .legenda {
+    font-style: italic;
+    font-size: 0.95em;
+    color: #666;
+    margin-top: 12px;
+}
+
+.cards-amor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #E0FFFF; /* Azul celeste claro */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #9a2ea8; /* Azul aço */
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+ul {
+    list-style-type: '🐾 '; /* Um emoji de patinha! */
+    margin-left: 25px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+strong {
+    color: #47095a; /* Laranja escuro */
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #b44686;
+    color: #FFF;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .introducao {
+        flex-direction: column;
+    }
+
+    .cards-amor {
+        grid-template-columns: 1fr; /* Em telas menores, uma coluna */
+    }
+}
